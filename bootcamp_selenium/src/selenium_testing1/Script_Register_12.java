@@ -10,13 +10,13 @@ public class Script_Register_12 {
 		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		Thread.sleep(5000);
 		//email
-		driver.findElement(new By.ByCssSelector("input[name=email_create]")).sendKeys("12345678@gmail.com");	
-		driver.findElement(new By.ByCssSelector("input[name=email_create]")).sendKeys(Keys.ENTER);	
+		driver.findElement(By.name("email_create")).sendKeys("12345678@gmail.com");	
+		driver.findElement(By.name("email_create")).sendKeys(Keys.ENTER);	
 		Thread.sleep(5000);		
 		//firstname
-		driver.findElement(new By.ByCssSelector("input[name=customer_firstname]")).sendKeys("ABC");	
+		driver.findElement(By.name("customer_firstname")).sendKeys("ABC");	
 		//lastname
-		driver.findElement(new By.ByCssSelector("input[name=customer_lastname]")).sendKeys("DEF");	
+		driver.findElement(By.name("customer_lastname")).sendKeys("DEF");	
 		
 	
 	

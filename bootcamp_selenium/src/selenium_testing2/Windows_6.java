@@ -36,6 +36,10 @@ public class Windows_6 {
                 System.out.println("Content of child window is: " + text.getText());
             }
         }
+	    
+	    Thread.sleep(2000);
+	    driver.switchTo().window(mainWindowHandle);
+
 		
 }
 }
